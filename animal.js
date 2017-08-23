@@ -1,13 +1,13 @@
 // Parent
 "use strict"
-function Animal(species, name, sound) {
+function Animal(name, species, sound) {
     this.name = name;
     this.species = species;
     this.sound = sound
 }
 
 Animal.prototype.makeNoise = function () {
-    console.log(`${this.sound.toUpperCase()}!!`);
+    return `${this.sound.toUpperCase()}!!`;
 };
 
 module.exports = Animal;

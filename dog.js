@@ -1,10 +1,11 @@
 // Child
-"use strict"
+'use strict'
 const Animal = require('./animal.js');
 
 function Dog(name) {
-    // const __thisDog__ = this;
-    Animal.call(this, name, "Dog", "Woof");
+    Animal.call(this, name, 'Dog', 'Woof');
 }
+
+Dog.prototype = Object.create(Animal.prototype);
 
 module.exports = Dog;
