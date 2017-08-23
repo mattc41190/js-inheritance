@@ -10,3 +10,6 @@ Let's get going:
 Ideas:
 
 * Make a new animal, maybe a horse, and have it inherit from Animal.
+
+### Props:
+* http://www.objectplayground.com/
