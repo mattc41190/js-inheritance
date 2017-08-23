@@ -7,7 +7,7 @@ function Dog(name) {
     Animal.call(this, name, 'Dog', 'Woof');
 }
 
-Dog.prototype = Object.create(Animal.prototype);
-// Dog.prototype = Object.create(AnimalPrototype);
+// Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(AnimalPrototype);
 
 module.exports = Dog;
