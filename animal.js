@@ -10,4 +10,10 @@ Animal.prototype.makeNoise = function () {
     return `${this.sound.toUpperCase()}!!`;
 };
 
-module.exports = Animal;
+const AnimalPrototype = {
+  makeNoise : function() {
+    return `${this.sound.toUpperCase()}!!`;
+  }
+}
+
+module.exports = {Animal, AnimalPrototype};
